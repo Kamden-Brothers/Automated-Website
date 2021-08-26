@@ -1,7 +1,10 @@
+#Finds an images that corresponds within the csv file uploaded from Frazer and appends one to the end of each data entry
+#If no image corresponds it inputs a generic photo of the car lot.
+
 from os import listdir
 from os.path import isfile, join
-mypath = r"C:\Users\kamde\nodejsPractice\HelloWorld\public\Images"
-onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+mypath = r"C:\Users\kamde\nodejsPractice\HelloWorld\public\Images" 
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]   #finds all files within a folder
 
 
 length = len(onlyfiles)
